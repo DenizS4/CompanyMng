@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UGUUocujelA7aqt6YIqvddbGckv2WVwGA8Fd63zot7eOIxGAOp8iyu/sr80V54ILTgjEHF5PrprZhFqVe6e5ZA==",
+  "dgSpecHash": "+SEhwpIZ0372gFCthcixCSayZzJK8oBUJm7LDJIDLGSzdGc3nI6abzWg2n0mLiGX8NZ8pjtc6xpW/0LIImrMMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\90538\\RiderProjects\\CompanyMng\\CompanyMng.API\\CompanyMng.API.csproj",
+  "projectFilePath": "C:\\Users\\90538\\Videos\\CompanyMng\\CompanyMng\\CompanyMng.API\\CompanyMng.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\90538\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\90538\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
