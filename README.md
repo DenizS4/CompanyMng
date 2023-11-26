@@ -1,9 +1,9 @@
     How To Run Project?
-After clonning the project locate CompanyMng.sln file and open it before running the application configure your sql server name
+After clonning the project locate CompanyMng.sln file and open it. Before running the application configure your sql server name
 
   ![sql](https://github.com/DenizS4/CompanyMng/assets/121265021/178f3155-a512-45b3-b11c-22c2ad3fe489)
 
-and add it to app.setting.json inside CompanyMngConnectionString to Data Source
+and add it to app.setting.json inside CompanyMngConnectionString to Data Source.
 
 ![appsettings](https://github.com/DenizS4/CompanyMng/assets/121265021/8eeca554-c5ca-4821-83e4-4079216f18f6)
 
