@@ -1,0 +1,178 @@
+<div class="container">
+  <h1>Users</h1>
+  <button type="button" class="btn btn-primary m-2 float-end" data-bs-toggle="modal" data-bs-target="#addModal"
+          (click)="addClick()">
+    Create User
+  </button>
+  <div class="modal" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModal"
+       aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">{{ModalTitle}}</h1>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" (click)="closeClick()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="mt-5">
+            <div class="mb-3">
+              <label class="form-label">User Name *</label>
+              <input type="" class="form-control" name="username" required [(ngModel)]="users.username" >
+              <span *ngIf="username.invalid && (username.touched || username.dirty)" style="color: red">User Name field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password *</label>
+              <input type="" class="form-control" name="password" required [(ngModel)]="users.password">
+              <span *ngIf="password.invalid && (password.touched || password.dirty)" style="color: red">Password field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email *</label>
+              <input type="" class="form-control" name="email" required [(ngModel)]="users.email">
+              <span *ngIf="email.invalid && (email.touched || email.dirty)" style="color: red">Email field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">First Name *</label>
+              <input type="" class="form-control" name="firstName" required [(ngModel)]="users.firstName">
+              <span *ngIf="firstName.invalid && (firstName.touched || firstName.dirty)" style="color: red">First Name field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Last Name *</label>
+              <input type="" class="form-control" name="lastName" required [(ngModel)]="users.lastName">
+              <span *ngIf="lastName.invalid && (lastName.touched || lastName.dirty)" style="color: red">Last Name field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Role *</label>
+              <select class="form-control" name="roles" required [(ngModel)]="users.roles"  #roles="ngModel" >
+                <option [ngValue]="0">
+                  None
+                </option>
+                <option [ngValue]="1">
+                  User
+                </option>
+                <option [ngValue]="2">
+                  Admin
+                </option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div *ngIf="ActivateAddEdit==1">
+            <a type="button" class="btn btn-primary"
+               (click)="updateUsers(users)">Update</a>
+          </div>
+          <button type="button" class="close btn btn-secondary"
+                  data-bs-dismiss="modal" aria-label="Close" (click)="closeClick()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModal"
+       aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">{{ModalTitle}}</h1>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" (click)="closeClick()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="mt-5">
+            <div class="mb-3">
+              <label class="form-label">User Name *</label>
+              <input type="" class="form-control" name="username" required [(ngModel)]="Us.username"  #username="ngModel" >
+              <span *ngIf="username.invalid && (username.touched || username.dirty)" style="color: red">User Name field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password *</label>
+              <input type="" class="form-control" name="password" required [(ngModel)]="Us.password"  #password="ngModel" >
+              <span *ngIf="password.invalid && (password.touched || password.dirty)" style="color: red">Password field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email *</label>
+              <input type="" class="form-control" name="email" required [(ngModel)]="Us.email"  #email="ngModel" >
+              <span *ngIf="email.invalid && (email.touched || email.dirty)" style="color: red">Email field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">First Name *</label>
+              <input type="" class="form-control" name="firstName" required [(ngModel)]="Us.firstName"  #firstName="ngModel" >
+              <span *ngIf="firstName.invalid && (firstName.touched || firstName.dirty)" style="color: red">First Name field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Last Name *</label>
+              <input type="" class="form-control" name="lastName" required [(ngModel)]="Us.lastName"  #lastName="ngModel" >
+              <span *ngIf="lastName.invalid && (lastName.touched || lastName.dirty)" style="color: red">Last Name field is required</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Role *</label>
+              <select class="form-control" name="roles" required [(ngModel)]="Us.roles"  #roles="ngModel">
+                <option [ngValue]="0">
+                  None
+                </option>
+                <option [ngValue]="1">
+                  User
+                </option>
+                <option [ngValue]="2">
+                  Admin
+                </option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div *ngIf="ActivateAddEdit==0">
+            <a type="button" class="btn btn-primary"
+               (click)="addUsers(Us)">Add</a>
+          </div>
+          <button type="button" class="close btn btn-secondary"
+                  data-bs-dismiss="modal" aria-label="Close" (click)="closeClick()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Actions</th>
+      <th>User Name</th>
+      <th>Password</th>
+      <th>Email</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of users">
+      <td>
+        <a class="btn btn-light" style="background-color: red; color: white" (click)="deleteUser(item)">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor"
+               xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                  d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+          </svg>
+        </a>
+        <a class="btn btn-light" style="background-color: green; color: white" data-bs-toggle="modal" data-bs-target="#updateModal" (click)="editClick(item)">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+            <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+          </svg>
+        </a>
+      </td>
+      <td>{{item.username}}</td>
+      <td>{{item.password}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.firstName}}</td>
+      <td>{{item.lastName}}</td>
+      <td>{{item.roles}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

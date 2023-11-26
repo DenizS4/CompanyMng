@@ -1,0 +1,26 @@
+<div class="container">
+  <h2 style="color:red;">Latest added Users</h2>
+
+  <table class="table">
+    <thead>
+    <tr>
+
+      <th>User Name</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of users">
+
+      <td>{{item.username}}</td>
+      <td>{{item.firstName}}</td>
+      <td>{{item.lastName}}</td>
+      <td *ngIf="item.roles==0">None</td>
+      <td *ngIf="item.roles==1">User</td>
+      <td *ngIf="item.roles==2">Admin</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

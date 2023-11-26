@@ -1,0 +1,21 @@
+<div class="container">
+  <h2 style="color: red;">Latest Added Companies</h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Company Name</th>
+      <th>Company Number</th>
+      <th>Country</th>
+      <th>Website</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of companies">
+      <td>{{item.companyName}}</td>
+      <td>{{item.companyNumber}}</td>
+      <td>{{item.country}}</td>
+      <td>{{item.website}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

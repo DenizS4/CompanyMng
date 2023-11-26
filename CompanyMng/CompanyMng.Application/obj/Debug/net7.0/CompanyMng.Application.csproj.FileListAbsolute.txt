@@ -1,0 +1,17 @@
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\bin\Debug\net7.0\CompanyMng.Application.deps.json
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\bin\Debug\net7.0\CompanyMng.Application.dll
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\bin\Debug\net7.0\CompanyMng.Application.pdb
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\bin\Debug\net7.0\CompanyMng.Domain.dll
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\bin\Debug\net7.0\CompanyMng.Infrastructure.dll
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\bin\Debug\net7.0\CompanyMng.Domain.pdb
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\bin\Debug\net7.0\CompanyMng.Infrastructure.pdb
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\CompanyMng.Application.csproj.AssemblyReference.cache
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\CompanyMng.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\CompanyMng.Application.AssemblyInfoInputs.cache
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\CompanyMng.Application.AssemblyInfo.cs
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\CompanyMng.Application.csproj.CoreCompileInputs.cache
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\CompanyMng.Application.csproj.CopyComplete
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\CompanyMng.Application.dll
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\refint\CompanyMng.Application.dll
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\CompanyMng.Application.pdb
+C:\Users\90538\RiderProjects\CompanyMng\CompanyMng.Application\obj\Debug\net7.0\ref\CompanyMng.Application.dll
